@@ -6,7 +6,7 @@
  * Time: 18:36
  */
 
-namespace InstagramScraper\TwoStepVerification;
+namespace InstagramWeb\TwoStepVerification;
 
 
 class ConsoleVerification implements TwoStepVerificationInterface

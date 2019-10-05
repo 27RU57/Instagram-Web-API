@@ -1,9 +1,9 @@
 <?php
 
-namespace InstagramScraper\Tests;
+namespace InstagramWeb\Tests;
 
-use InstagramScraper\Instagram;
-use InstagramScraper\Model\Media;
+use InstagramWeb\Instagram;
+use InstagramWeb\Model\Media;
 use phpFastCache\CacheManager;
 use PHPUnit\Framework\TestCase;
 

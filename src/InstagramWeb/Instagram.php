@@ -1,20 +1,20 @@
 <?php
 
-namespace InstagramScraper;
+namespace InstagramWeb;
 
-use InstagramScraper\Exception\InstagramAuthException;
-use InstagramScraper\Exception\InstagramException;
-use InstagramScraper\Exception\InstagramNotFoundException;
-use InstagramScraper\Model\Account;
-use InstagramScraper\Model\Comment;
-use InstagramScraper\Model\Like;
-use InstagramScraper\Model\Location;
-use InstagramScraper\Model\Media;
-use InstagramScraper\Model\Story;
-use InstagramScraper\Model\Tag;
-use InstagramScraper\Model\UserStories;
-use InstagramScraper\TwoStepVerification\ConsoleVerification;
-use InstagramScraper\TwoStepVerification\TwoStepVerificationInterface;
+use InstagramWeb\Exception\InstagramAuthException;
+use InstagramWeb\Exception\InstagramException;
+use InstagramWeb\Exception\InstagramNotFoundException;
+use InstagramWeb\Model\Account;
+use InstagramWeb\Model\Comment;
+use InstagramWeb\Model\Like;
+use InstagramWeb\Model\Location;
+use InstagramWeb\Model\Media;
+use InstagramWeb\Model\Story;
+use InstagramWeb\Model\Tag;
+use InstagramWeb\Model\UserStories;
+use InstagramWeb\TwoStepVerification\ConsoleVerification;
+use InstagramWeb\TwoStepVerification\TwoStepVerificationInterface;
 use InvalidArgumentException;
 use phpFastCache\Cache\ExtendedCacheItemPoolInterface;
 use phpFastCache\CacheManager;
@@ -301,10 +301,10 @@ class Instagram
     /**
      * Gets logged user feed.
      *
-     * @throws     \InstagramScraper\Exception\InstagramException
-     * @throws     \InstagramScraper\Exception\InstagramNotFoundException
-     *
      * @return     Media[]
+     *@throws     \InstagramWeb\Exception\InstagramNotFoundException
+     *
+     * @throws     \InstagramWeb\Exception\InstagramException
      */
     public function getFeed()
     {

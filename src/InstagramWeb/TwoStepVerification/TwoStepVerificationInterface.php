@@ -6,7 +6,7 @@
  * Time: 18:27
  */
 
-namespace InstagramScraper\TwoStepVerification;
+namespace InstagramWeb\TwoStepVerification;
 
 
 interface TwoStepVerificationInterface

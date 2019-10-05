@@ -6,7 +6,7 @@ require __DIR__ . '/EmailVerification.php';
  * EmailVerification requires https://packagist.org/packages/php-mail-client/client
  */
 
-$instagram = \InstagramScraper\Instagram::withCredentials('user', 'password');
+$instagram = \InstagramWeb\Instagram::withCredentials('user', 'password');
 
 $emailVecification = new EmailVerification(
     'user@mail.ru',

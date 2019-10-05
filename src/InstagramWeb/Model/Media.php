@@ -1,8 +1,8 @@
 <?php
 
-namespace InstagramScraper\Model;
+namespace InstagramWeb\Model;
 
-use InstagramScraper\Endpoints;
+use InstagramWeb\Endpoints;
 
 /**
  * Class Media
